@@ -25,7 +25,7 @@
 6. Data Cleaning
    * pandas
    * regular expression
-   * Data IO: json/pickle
+   * Data IO: json/pickle/mongodb/mysql/redis
 
 ### week 5 (Oct 9) 
 7. Text data analysis: basic operations
