@@ -1,0 +1,19 @@
+by US state						
+total	ISD/1976 AND AS/NY					
+proc	ISD/1976 AND ABST/(method or process) AND AS/NY					
+						
+by Country						
+total	ISD/1976 AND ACN/CN					
+proc	ISD/1976 AND ABST/(method or process) AND ACN/CN					
+						
+	KR					
+	JP					
+	DE					
+	TW					
+	HK					
+	SG					
+						
+						
+						
+						
+1976 - 2018
