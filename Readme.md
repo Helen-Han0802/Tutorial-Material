@@ -12,13 +12,15 @@
     * HTML
     * Python Basics
 
+
 ### week 3 (Sep 25)
-5. Data collection (web scraping)
+5. Data collection (Web scraping)
     * HTTP
     * Requests: post/get
     * Cookies
     * IP
     * I'm NOT a robot (CAPTCHA)
+    * Examples: scraping US patent records(http://patft.uspto.gov/) and scraping Hong Kong house transactions (https://data.28hse.com/en/)
 
 
 ### week 4 (Oct 2) 
