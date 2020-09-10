@@ -3,7 +3,7 @@ import requests
 import json
 import csv
 
-url = "https://data.28hse.com/webservice"
+url = "https://data.28hse.com/en/webservice"
 
 for page in range(1,2):
 	start = (page-1)*10
@@ -77,9 +77,8 @@ for page in range(1,2):
 		'area_id':'3' # New Te
 	}
 
-	wb_data = requests.post(url, data= payload )
+	wb_data = requests.post(url, data= payload)
 	print('--------------')
 	print(str(page))
-	g= wb_data.text.encode('gbk')
-	text = g.decode('unicode-escape')
-	print(text)
+	data= wb_data.text
+	print(data)
