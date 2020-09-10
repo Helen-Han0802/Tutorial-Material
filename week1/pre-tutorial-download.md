@@ -1,7 +1,7 @@
 ## Week 1
 
 ### Software installation (Git/Anaconda/Jupyter Notebook/Python/Google Chrome Browser...)
-
+  - Please ignore if you already installed the software.
 #### Github 
   - Install Github
     + For Windows: go to https://gitforwindows.org/, hit "Download" and install it using default setting
