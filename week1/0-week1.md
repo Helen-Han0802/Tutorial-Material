@@ -22,19 +22,20 @@
 
 #### Install Git
 
-    + For Windows: go to https://gitforwindows.org/, hit "Download" and install using default setting
-    + For Mac: (every Mac already has git installed; below is the solution if you need to *upgrade* git)
++ For Windows: go to https://gitforwindows.org/, hit "Download" and install using default setting
+
++ For Mac: (every Mac already has git installed; below is the solution if you need to *upgrade* git)
       
-      * 1) Step 1 - Install Homebrew (https://brew.sh/)
-        - I recommand you to install Homebrew first, it would make your coding life more easier: 
-        - Copy & paste the following into the terminal window and hit Return
+    * 1) Step 1 - Install Homebrew (https://brew.sh/)
+      - I recommand you to install Homebrew first, it would make your coding life more easier: 
+      - Copy & paste the following into the terminal window and hit Return
           ```  
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
           ```  
-        - You will be offered to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again
+      - You will be offered to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again
       
-      * 2) Step 2 – Install Git:
-        - Copy & paste the following into the terminal window and hit Return
+   * 2) Step 2 – Install Git:
+       - Copy & paste the following into the terminal window and hit Return
           ```  
           brew install git
           ``` 
