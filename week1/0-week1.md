@@ -20,8 +20,8 @@
 ### Software/Packages installation (Anaconda/Jupyter Notebook/Python/Chrome Browser...)
 
 
-#### Github
-  - Install Git 
+#### Install Git
+
     + For Windows: go to https://gitforwindows.org/, hit "Download" and install using default setting
     + For Mac: (every Mac already has git installed; below is the solution if you need to *upgrade* git)
       
