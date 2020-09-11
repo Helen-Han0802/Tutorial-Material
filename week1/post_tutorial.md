@@ -7,9 +7,9 @@
 
 ### Requirements
 
-- The purpose of our first tutorial is learning how to install software and packages that are needed for our future tutorial on your computer. This is the most important step to start with.
+- The purpose of our first tutorial is to learn how to install software and packages that are needed for our future tutorial on your computer. This is the most important step to start with.
 
-- Using git on command line is noe required but you should know how to use python and install packages in anaconda.
+- Using git on command line is not required but you should know how to use python and install packages in anaconda.
 
 - Please read this document carefully, you can easily follow the steps here to successfully install the git and anaconda: https://github.com/HKUST-SOSC4300-5500/Tutorial-Material/blob/master/week1/0-week1.md 
 
