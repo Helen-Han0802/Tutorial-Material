@@ -111,21 +111,47 @@ Alternatively, you can use the command line options:
   pip3 install redis
   ```
 
- * Python version control: To install a different version of Python without overwriting the current version, create a new environment and install the second Python version into it. For example, the below codes created `snakes`
+ * Python version control: To install a different version of Python without overwriting the current version, create a new environment and install the second Python version into it. For example, the below codes created “snakes”
+  - check the environments installed in anaconda
   ```
   conda info --envs
-  conda create -n snakes python=3.5 ## create a new environment called snakes
-  conda activate snakes ## activate this new environment
-  python --version ## show python version to test what we have successfully shifted to the new environmnet
-  conda deactivate
-  conda create -n snakes2 python=2.7
-  conda activate snakes2
-  conda deactivate
-  conda info --envs # check your environment
-  conda remove --name snakes2 --all # remove environment
-  conda search python
   ```
-  
+  - create a new environment called snakes with python version 3.5
+  ```  
+  conda create -n snakes python=3.5 
+  ```  
+  - activate this new environment
+  ```  
+  conda activate snakes 
+  ```  
+  - check the python version to test what we have successfully shifted to the new environmnet
+  ```  
+  python --version 
+  ```  
+  - deactivate this new environment and go to default (base) environment
+  ```  
+  conda deactivate
+  ```  
+  - create a new environment called snakes2 with python version 2.7
+  ```  
+  conda create -n snakes2 python=2.7
+  ```  
+  - activate this new environment
+  ```  
+  conda activate snakes2
+  ```  
+  - deactivate this new environment
+  ```  
+  conda deactivate
+  ```  
+  - check your environment
+  ```  
+  conda info --envs 
+  ```  
+  - delete environment snakes2
+  ```  
+  conda remove --name snakes2 --all 
+  ```
   
   * Problems when installing Anaconda/packages:
     + For Mac, check: 
