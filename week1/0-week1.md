@@ -19,10 +19,11 @@
 
 ### Software/Packages installation (Anaconda/Jupyter Notebook/Python/Chrome Browser...)
 
-#### Github 
-  - Install Github 
+
+#### Github
+  - Install Git 
     + For Windows: go to https://gitforwindows.org/, hit "Download" and install using default setting
-    + For Mac: 
+    + For Mac: (every Mac already has git installed; below is the solution if you need to *upgrade* git)
       
       * 1) Step 1 - Install Homebrew (https://brew.sh/)
         - I recommand you to install Homebrew first, it would make your coding life more easier: 
@@ -36,7 +37,17 @@
         - Copy & paste the following into the terminal window and hit Return
           ```  
           brew install git
-          ```  
+          ``` 
+#### GitHub Desktop App          
+          
+You can use GitHub Desktop for a nice graphical interface (https://desktop.github.com/ ). In Lecture 1 I showed how to use the Mac version of GitHub desktop.
+The below link shows another good tutorial
+https://programminghistorian.org/en/lessons/retired/getting-started-with-github-desktop
+
+
+Alternatively, you can use the command line options:
+
+#### Github Command Line Option
   - register (please remember your username and password)
   
   - set up Git:
@@ -99,12 +110,12 @@
   pip3 install redis
   ```
 
- * Python version control: To install a different version of Python without overwriting the current version, create a new environment and install the second Python version into it.
+ * Python version control: To install a different version of Python without overwriting the current version, create a new environment and install the second Python version into it. For example, the below codes created `snakes`
   ```
   conda info --envs
-  conda create -n snakes python=3.5
-  conda activate snakes
-  python --version
+  conda create -n snakes python=3.5 ## create a new environment called snakes
+  conda activate snakes ## activate this new environment
+  python --version ## show python version to test what we have successfully shifted to the new environmnet
   conda deactivate
   conda create -n snakes2 python=2.7
   conda activate snakes2
