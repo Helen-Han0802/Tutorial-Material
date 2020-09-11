@@ -98,61 +98,70 @@ Alternatively, you can use the command line options:
     - After installation, open Terminal (mac) or Anaconda Prompt (windows) and run the following codes
   
   * Basic Operations (installing packages/ using python)
-  ```
-  conda info
-  conda version
-  python
-  import redis 
-  import torch
-  import tensorflow 
-  conda install -c conda-forge selenium
-  conda install -c conda-forge redis 
-  conda install pytorch torchvision -c pytorch
-  pip3 install redis
-  ```
+    - check conda 
+    ```
+    conda info
+    ```
+    - check conda version
+    ```
+    conda version
+    ```
+    - enter python environment
+    ```
+    python
+     ```
+    - import packages in python, you see errors, means you didn't install the redis packages
+     ```
+     import redis 
+     ```
+    - type "exit()" to exit the python environment, and use conda/pip to install packages for python 
+    ```
+    conda install -c conda-forge redis 
+    pip install redis
+    ```
 
  * Python version control: To install a different version of Python without overwriting the current version, create a new environment and install the second Python version into it. For example, the below codes created “snakes”
-  - check the environments installed in anaconda
-  ```
-  conda info --envs
-  ```
-  - create a new environment called snakes with python version 3.5
-  ```  
-  conda create -n snakes python=3.5 
-  ```  
-  - activate this new environment
-  ```  
-  conda activate snakes 
-  ```  
-  - check the python version to test what we have successfully shifted to the new environmnet
-  ```  
-  python --version 
-  ```  
-  - deactivate this new environment and go to default (base) environment
-  ```  
-  conda deactivate
-  ```  
-  - create a new environment called snakes2 with python version 2.7
-  ```  
-  conda create -n snakes2 python=2.7
-  ```  
-  - activate this new environment
-  ```  
-  conda activate snakes2
-  ```  
-  - deactivate this new environment
-  ```  
-  conda deactivate
-  ```  
-  - check your environment
-  ```  
-  conda info --envs 
-  ```  
-  - delete environment snakes2
-  ```  
-  conda remove --name snakes2 --all 
-  ```
-  
+    - check the environments installed in anaconda
+    ```
+    conda info --envs
+    ```
+    - create a new environment called snakes with python version 3.5
+    ```  
+    conda create -n snakes python=3.5 
+    ```  
+     - activate this new environment
+    ```  
+    conda activate snakes 
+    ```  
+    - check the python version to test what we have successfully shifted to the new environmnet
+    ```  
+    python --version 
+    ```  
+    - deactivate this new environment and go to default (base) environment
+    ```  
+    conda deactivate
+    ```  
+    - create a new environment called snakes2 with python version 2.7
+    ```  
+    conda create -n snakes2 python=2.7
+    ```  
+    - activate this new environment
+    ```  
+    conda activate snakes2
+    ```  
+    - deactivate this new environment
+    ```  
+    conda deactivate
+    ```  
+    - check your environment
+    ```  
+    conda info --envs 
+    ```  
+    - delete environment snakes2
+    ```  
+    conda remove --name snakes2 --all 
+    ```
+
   * Problems when installing Anaconda/packages:
     + For Mac, check: 
       - a) /Library/Frameworks/ for potential previous python installation; 
