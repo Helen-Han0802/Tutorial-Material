@@ -1,4 +1,4 @@
-# Tutorial Week 2
+# Tutorial for Week 2
 
 
 ## Learn how to use jupyter notebook on your computer
