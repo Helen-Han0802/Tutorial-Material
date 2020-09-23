@@ -1,0 +1,7 @@
+query:ISD/1976 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1977 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1978 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1979 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1980 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1981 AND ABST/(method or process) AND ACN/CN; num:0;
+query:ISD/1982 AND ABST/(method or process) AND ACN/CN; num:0;

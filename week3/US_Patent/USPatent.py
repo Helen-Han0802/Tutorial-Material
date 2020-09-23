@@ -16,41 +16,7 @@ import pandas as pd
 from multiprocessing import Pool
 import re
 
-
-def gen_query1():
-	lists = pd.read_excel("US code.xlsx")
-	#print(lists['Name'],lists['St'])
-	query = []
-	for st in lists['ST']:
-		for year in range(1976,2019):
-			query.append('ISD/{0} AND AS/{1}'.format(year,st))
-	return query
-
-
-
-def gen_query2():
-	lists = pd.read_excel("US code.xlsx")
-	#print(lists['Name'],lists['St'])
-	query = []
-	for st in lists['ST']:
-		for year in range(1976,2019):
-			query.append('ISD/{0} AND ABST/(method or process) AND AS/{1}'.format(year,st))
-	return query
-
-
-def gen_query3():
-	lists = pd.read_csv("CityBoundaries.txt")
-	#print(lists['Name'],lists['St'])
-	query = []
-	for st in ['CN','KR','JP','DE','TW','HK','SG']:
-		for year in range(1976,2019):
-			query.append('ISD/{0} AND ACN/{1}'.format(year,st))
-	return query
-
-def gen_query4():
-
-	lists = pd.read_csv("CityBoundaries.txt")
-	#print(lists['Name'],lists['St'])
+def gen_query():
 	query = []
 	for st in ['CN','KR','JP','DE','TW','HK','SG']:
 		for year in range(1976,2019):
@@ -58,7 +24,7 @@ def gen_query4():
 	return query
 
 
-def gen_query11():
+def gen_query_all():
 
 	lists = pd.read_csv("CityBoundaries.txt")
 	#print(lists['Name'],lists['St'])
@@ -68,17 +34,6 @@ def gen_query11():
 			query.append('ISD/1/1/{0} AND AS/{1}'.format(year,st))
 	return query
 
-
-
-# def gen_query1():
-
-# 	lists = pd.read_csv("CityBoundaries.txt")
-# 	#print(lists['Name'],lists['St'])
-# 	query = []
-# 	for city, st in zip(lists['Name'],lists['St']):
-# 		for year in range(1990,2019):
-# 			query.append('AC/("{0}") AND AS/{1} AND ACN/US AND ISD/1/1/{2}->12/31/{3}'.format(city,st,year,year))
-# 	return query
 
 def get_num(query):
 		
@@ -106,7 +61,7 @@ def get_num(query):
 		'Query': query,
 		'd': 'PTXT'
 	}
-	#print(query)
+
 	url = 'http://patft.uspto.gov/netacgi/nph-Parser?' + urllib.parse.urlencode(param_list)
 	try:
 		web_data = requests.get(url, headers = headers)
@@ -125,7 +80,7 @@ def get_num(query):
 				out = re.findall('''<strong>(.*?)</strong>''',web_data.text.lower().strip().replace("\n",""))
 
 			print(query,"=>>>",out)
-			f = open('../Output/Num_Q4_2019_05_30.txt','a',encoding='utf-8',errors='ignore') 
+			f = open('./Output/Num_Q4_2019_05_30.txt','a',encoding='utf-8',errors='ignore') 
 			f.write("\n" + 'query:{0}; num:{1};'.format(query,out))
 			f.close()
 			
@@ -138,29 +93,9 @@ def get_num(query):
 
 if __name__ == '__main__':
 
-
-	# bunch = []
-	# with open('../Output/Num_1.txt',encoding='utf-8') as r :
-	# 	for line in r:
-	# 		if len(line)> 3:
-	# 			bunch.append(line.split(":")[1].split(";")[0])
-
-	#print('TTL/(process OR method) AND AC/("Columbus") AND AS/OH AND ACN/US AND ISD/1/1/2008->12/31/2008' in bunch)
-
-	query_list = gen_query4()
+	query_list = gen_query()
 	for query in query_list:
 		get_num(query)
-
-	# query_list = gen_query()
-	# p = Pool(processes=4)
-	# for query in query_list:
-	# 	p.apply_async(get_num, args=(query,))
-	# p.close()
-	# p.join()
-	# print("Done!")
-
-	# Output = pd.read_csv("../Output/Num.txt", header=None, encoding = "UTF-8",delimiter = "\t")
-	# Output.to_csv("../Output/Num.txt")
 
 	
 
