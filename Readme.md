@@ -13,7 +13,7 @@
     * Python Basics
 
 
-## week 3 (Sep 25)
+## week 3 & week5 (Sep 25/Oct 9)
 5. Data collection (Web scraping)
     * HTTP
     * Requests: post/get
@@ -22,36 +22,31 @@
     * I'm NOT a robot (CAPTCHA)
     * Examples: scraping US patent records(http://patft.uspto.gov/) and scraping Hong Kong house transactions (https://data.28hse.com/en/)
 
-
-## week 4 (Oct 2) 
+## week 6 (Oct 16) 
 6. Data Cleaning
    * pandas
    * regular expression
    * Data IO: json/pickle/mongodb/mysql/redis
 
-## week 5 (Oct 9) 
+## week 7 (Oct 23) 
 7. Text data analysis: basic operations
 
-## week 6 (Oct 16)
+## week 8 (Oct 30)
 8. Text data analysis: dictionary counts
 
-## week 7 (Oct 23)
+## week 9 (Nov 6)
 9. Text data analysis: supervised learning
 
-## week 8 (Oct 30)
+## week 10 (Nov 13)
 10. Network: basic operations
 
-## week 9 (Nov 6)
+## week 11 (Nov 20)
 11. Networks: visualization
 
-## week 10 (Nov 13)
+## week 12 (Nov 27)
 12. Networks: simulations
-
-## week 11 (Nov 20)
 13. Networks: statistic
 
-## week 12 (Nov 27)
-14. Online experiments
 
 ## Assignments (tentative)
 - 4 assignments in total
