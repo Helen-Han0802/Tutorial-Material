@@ -23,10 +23,11 @@
     * Examples: scraping US patent records(http://patft.uspto.gov/) and scraping Hong Kong house transactions (https://data.28hse.com/en/)
 
 ## week 6 (Oct 16) 
-6. Data Cleaning
+6.1 Data Cleaning
    * pandas
    * regular expression
    * Data IO: json/pickle/mongodb/mysql/redis
+6.2 Sklearn in Python
 
 ## week 7 (Oct 23) 
 7. Text data analysis: basic operations
