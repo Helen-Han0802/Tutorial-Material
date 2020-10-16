@@ -17,7 +17,7 @@
 5. Data collection (Web scraping)
     * HTTP
     * Requests: post/get
-    * Cookies
+    * Cookie
     * Proxy IP
     * I'm NOT a robot (CAPTCHA)
     * Examples: scraping US patent records(http://patft.uspto.gov/) and scraping Hong Kong house transactions (https://data.28hse.com/en/)
