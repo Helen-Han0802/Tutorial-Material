@@ -1,7 +1,7 @@
 # Tutorial for Week 6
 
 
-## Data Cleaning
+## Text/String Cleaning
 - Text Manipulation: regular expression
 
 ## Data Processing
