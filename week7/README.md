@@ -1,21 +1,36 @@
-## Welcome to the Introduction to Text Analytics Training!
+## Topic Model (from webscraping to machine learning)
 
-### 1. Launch Anaconda and Open a Jupyter Notebook
+**Courtesy of Alice Zhao**
 
-*Windows:*
-Open the Anaconda Navigator program. You should see the Jupyter Notebook logo. Below the logo, click Launch. A browser window should open up. In the browser window, navigate to the location of the saved Jupyter Notebook files and open 0-Hello-World.ipynb. Follow the instructions in the notebook.
+### Data Collection & Cleaning
 
-*Mac/Linux:*
-Open a terminal. Type ```jupyter notebook```. A browser should open up. In the browser window, navigate to the location of the saved Jupyter Notebook files and open 0-Hello-World.ipynb. Follow the instructions in the notebook.
+- Steps
+    1. **Getting the data - **in this case, we'll be scraping data from a website
+    2. **Cleaning the data - **we will walk through popular text pre-processing techniques
+    3. **Organizing the data - **we will organize the cleaned data into a way that is easy to input into other algorithms
 
-### 2. Install a Few Additional Packages
+- Output
+    1. **Corpus** - a collection of text
+    2. **Document-Term Matrix** - word counts in matrix format
+        - (1) Clean Text - remove excess, unnecessary parts of the text
+        - (2) Tokenize Text - split the text into smaller pieces
+        - (3) Document-Term Matrix - Put into a matrix so a machine can read it
 
-There are a few additional packages we'll be using during the tutorial that are not included when you download Anaconda - wordcloud, textblob and gensim.
 
-*Windows:*
-Open the Anaconda Prompt program. You should see a black window pop up. Type `conda install -c conda-forge wordcloud` to download wordcloud. You will be asked whether you want to proceed or not. Type `y` for yes. Once that is done, type `conda install -c conda-forge textblob` to download textblob and `y` to proceed, and type `conda install -c conda-forge gensim` to download gensim and `y` to proceed.
+### Exploratory Data Analysis
 
-*Mac/Linux:*
-Your terminal should already be open. Type command-t to open a new tab. Type `conda install -c conda-forge wordcloud` to download wordcloud. You will be asked whether you want to proceed or not. Type `y` for yes. Once that is done, type `conda install -c conda-forge textblob` to download textblob and `y` to proceed, and type `conda install -c conda-forge gensim` to download gensim and `y` to proceed.
+1. **Most common words** - find these and create word clouds
+2. **Size of vocabulary** - look number of unique words and also how quickly someone speaks
+3. **Amount of profanity** - most common terms
 
-If you have any issues, please email me at wepengad@ust.hk or come talk to me before the start of the tutorial on Firday morning.
+
+### Sentiment Analysis
+
+1. Polarity: How positive or negative a word is. -1 is very negative. +1 is very positive.
+2. Subjectivity: How subjective, or opinionated a word is. 0 is fact. +1 is very much an opinion.
+
+
+### Topic Modeling
+
+1. Covering the basic steps on how to do **Latent Dirichlet Allocation (LDA)**, which is one of many topic modeling techniques.
+
