@@ -21,7 +21,6 @@
 
 1. **Most common words** - find these and create word clouds
 2. **Size of vocabulary** - look number of unique words and also how quickly someone speaks
-3. **Amount of profanity** - most common terms
 
 
 ### Sentiment Analysis
